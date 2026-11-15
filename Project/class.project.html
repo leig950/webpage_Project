@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leighton Jackson Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Welcome message populated by JavaScript -->
+    <h1 id="welcomeMessage">Welcome!</h1>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! My name is Leighton Jackson. I am a student studying
+            software development and learning web development with HTML,
+            CSS, JavaScript, and GitHub.
+        </p>
+
+        <p>
+            My goal is to improve my programming skills and build projects
+            that demonstrate my knowledge of software development and web
+            technologies.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+       <div class="project-card">
+    <a href="https://github.com" target="_blank">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=300&q=80"
+             alt="Web Development Project"
+             class="project-image">
+    </a>
+    <h3>HTML & CSS Portfolio</h3>
+    <p>
+        A portfolio project demonstrating responsive layout design
+        using HTML and CSS.
+    </p>
+</div>
+
+<div class="project-card">
+    <a href="https://github.com" target="_blank">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=300&q=80"
+             alt="JavaScript Project"
+             class="project-image">
+    </a>
+    <h3>JavaScript Applications</h3>
+    <p>
+        Interactive web applications using JavaScript, variables,
+        events, and user input.
+    </p>
+</div>
+
+<div class="project-card">
+    <a href="https://github.com" target="_blank">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=300&q=80"
+             alt="Software Development Project"
+             class="project-image">
+    </a>
+    <h3>Software Development</h3>
+    <p>
+        Programming projects focused on problem solving,
+        debugging, and software development fundamentals.
+    </p>
+</div>
+
+    </div>
+
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <form>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </section>
+
+    <script>
+
+        // Ask for the visitor's name
+        var userName = prompt("Please enter your name:");
+
+        // Update the welcome message dynamically
+        document.getElementById("welcomeMessage").innerText =
+            "Welcome, " + userName + "!";
+
+    </script>
+
+</body>
+
+</html>
