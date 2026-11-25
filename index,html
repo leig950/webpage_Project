@@ -77,7 +77,7 @@
         <a href="https://github.com" target="_blank">
             <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=300&q=80"
                 alt="JavaScript Project"
-                class="project-image">
+                 class="project-image">
     </a>
     <h3>JavaScript Applications</h3>
     <p>
